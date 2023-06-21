@@ -7,4 +7,4 @@ In this game, currently only Player vs Player mode is available.
 
 IDE used : IntelliJ IDEA Community Edition
 
-Thanks for reading this :)
+Thanks for reading this : )
