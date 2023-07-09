@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class display {
-    public  static ArrayList<Character> value = new ArrayList<>();
+    static ArrayList<Character> value ;
+
     Scanner scan =new Scanner(System.in);
     display(){
+        value=new ArrayList<>();
         value.add('1');
         value.add('2');
         value.add('3');
@@ -15,7 +17,8 @@ public class display {
         value.add('6');
         value.add('7');
         value.add('8');
-        value.add('9');}
+        value.add('9');
+    }
 
     public static void displayer(){
         // char a='1',b='2',c='3',d='4',e='5',f='6',g='7',h='8',i='9';
@@ -48,15 +51,22 @@ public class display {
         }
         return;
     }
+
+    //use to check the game .............
     public boolean check(char ch){
+
         for(int i=0;i<3;i++){
+        //check the row.......
         if(value.get(i*3) == ch && value.get((i*3)+1) == ch && value.get((i*3)+2) == ch){
             return true;
-        }}
-        for(int i=0;i<3 ;i++){
-        if(value.get(i) == ch && value.get((i*3)+i) == ch && value.get((2*3)+i) == ch){
+        }
+        //check the colume......
+        if(value.get(i) == ch && value.get((1*3)+i) == ch && value.get((2*3)+i) == ch){
             return true;
         }}
+
+        //check the  crose......
+
         if(value.get(0) == ch && value.get(4) == ch && value.get(8) == ch){
             return true;
         }
@@ -67,4 +77,6 @@ public class display {
         return false;
     }
 
-}
+
+    }
+
