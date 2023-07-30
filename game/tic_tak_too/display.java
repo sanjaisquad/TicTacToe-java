@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class display {
-    public  static ArrayList<Character> value = new ArrayList<>();
+    public  static ArrayList<Character> value;
     Scanner scan =new Scanner(System.in);
     display(){
+        value = new ArrayList<>();
         value.add('1');
         value.add('2');
         value.add('3');
