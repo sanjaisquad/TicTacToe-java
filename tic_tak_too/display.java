@@ -7,6 +7,7 @@ public class display {
     static ArrayList<Character> value ;
 
     Scanner scan =new Scanner(System.in);
+    //board.......
     display(){
         value=new ArrayList<>();
         value.add('1');
